@@ -1,13 +1,11 @@
 import Atom from "../../assets/icons/atom 1.svg";
-import Button from "../UI/Button";
 import Group from "../../assets/icons/Group.svg";
-import Idea from "../../assets/icons/idea 1.svg";
 import Pi from "../../assets/icons/number-pi 1.svg";
 import React from "react";
 import dashboard from "../../assets/icons/tabler-icon-layout-dashboard.svg";
-import questionicon from "../../assets/icons/conversation 1.svg";
 import reporticon from "../../assets/icons/tabler-icon-chart-pie.svg";
 import subjecticon from "../../assets/icons/tabler-icon-notes.svg";
+
 const English = () => {
   return (
     <div>
@@ -30,7 +28,7 @@ const English = () => {
               <li>
                 <a href="/">
                   <img src={reporticon} alt="" />
-                  <h6 className="bold">Reports</h6>
+                  <h6 className="bold">Result</h6>
                 </a>
               </li>
             </ul>
@@ -38,31 +36,32 @@ const English = () => {
         </div>
         <div className="subject-subcontainer">
           <div className="subject-toplabel">
-          <label>Subjects</label>
-          <span>/</span>
-          <a href="/">English</a>
+            <label>Subjects</label>
+            <span>/</span>
+            <a href="/">English</a>
           </div>
-          <div className="subject-heading">
+          <div className="class-heading">
             <h4 className="bold">English</h4>
-          </div>
-
+            <p className="text-muted">
+              English is almost certainly considered as one of the most
+              important subject that a subject can learn from school. Each and
+              every one of us should have knowledge and learning when it comes
+              in studying the English subject.
+            </p>
+            </div>
           <div className="subject-code">
             <ul className="subject-list">
               <li>
                 <img src={Group} alt="English Img" />
-                <h5>English</h5>
+                <h5>Grammar</h5>
               </li>
               <li>
                 <img src={Pi} alt="Maths Img" />
-                <h5>Math</h5>
+                <h5>Passage Reading</h5>
               </li>
               <li>
                 <img src={Atom} alt="Physics Img" />
-                <h5>Physics</h5>
-              </li>
-              <li>
-                <img src={Idea} alt="General Knowledge Img" />
-                <h5>General Knowledge</h5>
+                <h5>Eassy Writing</h5>
               </li>
             </ul>
           </div>

@@ -6,7 +6,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Choosing from "./components/Register/Choosing";
 import Dashboard from "./components/Teacher/Dashboard";
 import English from "./components/Student/English";
+import Grammar from "./components/Student/Grammar";
 import Login from "./components/Login/Login";
+import Modal from "./components/Student/Modal";
 import Navigation from "./components/Dev/Navigation";
 import Otpverification from "./components/Register/Otpverification";
 import Question from "./components/Teacher/Question";
@@ -22,6 +24,8 @@ function App() {
       <Question/>
       <StudentSubjects/>
       <English/>
+      <Grammar/>
+      <Modal/>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
