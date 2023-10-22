@@ -2,6 +2,7 @@
   width: 360px;
   border-right: 1px solid #ccc;
   padding: 24px 16px 0px 16px;
+  flex-shrink:0;
 }
 .main {
   display: flex;
@@ -151,15 +152,36 @@ display: flex;
 gap:8px;
 align-items: center;
 margin-bottom: 16px;
-
+}
+.class-heading p{
+  margin-top:16px;
+  margin-bottom: 24px;
 }
 .subject-code{
 margin-top: 16px;
+}
+.class-heading .input-section {
+  padding: 32px;
+  background-color: #F5FCFF;
+}
+.input-section .list-section{
+  margin-left: 20px;
+}
+.class-heading .input-section p{
+margin-top: 10px;
+}
+.class-heading .input-section .list-section{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.list-section li {
+  line-height: 28.8px;
 }
 .subject-list{
 display: flex;
 gap:24px;
 list-style: none;
+flex-wrap: wrap;
 }
 .subject-list li{
 background-color:#F5FCFF;
@@ -172,8 +194,15 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
+.video-container .subject-list li{
+ background-color:#222222;
+  color: #ffffff;
+}
 .subject-list li h5{
 font-size: 20px;
 line-height: 26px;
 font-weight: 400;
+}
+.video-container button{
+  margin-top: 56px;
 }

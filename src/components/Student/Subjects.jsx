@@ -35,7 +35,7 @@ const StudentSubjects = () => {
             <li>
               <a href="/">
                 <img src={reporticon} alt="" />
-                <h6 className="bold">Reports</h6>
+                <h6 className="bold">Result</h6>
               </a>
             </li>
           </ul>
