@@ -1,0 +1,48 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  gap: 92px;
+  justify-content: center;
+}
+.image-container {
+  position: relative;
+}
+.ellipse {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.form-container {
+  min-width: 540px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 0px 50px 0px rgba(46, 46, 45, 0.15);
+}
+.form-description {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-button.button {
+  width: 100%;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.form-container input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.logo-img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}

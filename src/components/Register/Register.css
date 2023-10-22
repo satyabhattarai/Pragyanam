@@ -1,0 +1,54 @@
+.register-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  gap: 92px;
+  justify-content: center;
+}
+.form-container {
+ padding: 33px 32px 140px 32px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 0px 50px 0px rgba(46, 46, 45, 0.15);
+}
+.register-button.button {
+  width: 100%;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.registerlogo-img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom:107px;
+}
+.otplogo-img{
+    margin-bottom:28px;
+}
+.choice-container{
+  display: flex;
+  gap:45px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 93px;
+}
+.choice-rect{
+  position: relative;
+  background-color:var(--primary-color) ;
+  width: 330px;
+  height: 250px;
+}
+.choicelogo-img{
+  margin-bottom:147px ;
+}
+.choice-img{
+  position:absolute;
+  top:-52px;
+  left:50%;
+  transform:translateX(-50%);
+
+}
+.choice-rect h2{
+  margin-top: 174px;
+  color:#fff
+}
