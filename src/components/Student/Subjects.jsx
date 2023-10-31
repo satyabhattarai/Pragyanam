@@ -1,5 +1,6 @@
 import Atom from "../../assets/icons/atom 1.svg";
 import Group from "../../assets/icons/Group.svg";
+import Header from "../Header/Header";
 import Idea from "../../assets/icons/idea 1.svg";
 import Pi from "../../assets/icons/number-pi 1.svg";
 import React from "react";
@@ -12,8 +13,10 @@ import { useNavigate } from "react-router-dom";
 
 const StudentSubjects = () => {
   const navigate = useNavigate();
-  return (
+  return ( <>
+     <Header />
     <div className="subject-container">
+
       <Sidebar />
       <div className="subject-subcontainer">
         <div className="subject-heading">
@@ -42,6 +45,7 @@ const StudentSubjects = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

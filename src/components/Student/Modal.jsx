@@ -1,4 +1,5 @@
 import Button from "../UI/Button";
+import Header from "../Header/Header";
 import React from "react";
 import Sidebar from "../Sidebar";
 import dashboard from "../../assets/icons/tabler-icon-layout-dashboard.svg";
@@ -7,7 +8,10 @@ import subjecticon from "../../assets/icons/tabler-icon-notes.svg";
 import videoplay from "../../assets/icons/video-play.svg";
 const Modal = () => {
   return (
+    <>
+ <Header/>
     <div className="subject-container">
+
       <Sidebar/>
       <div className="subject-subcontainer">
         <div className="subject-toplabel">
@@ -62,6 +66,7 @@ const Modal = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

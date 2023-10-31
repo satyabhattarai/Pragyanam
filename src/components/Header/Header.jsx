@@ -6,7 +6,7 @@ import DownArrowIcon from "../../assets/icons/Down Arrow.svg"
 import NotificationIcon from "../../assets/icons/notification.svg";
 import React from "react";
 import Search from "../../assets/icons/Search.svg";
-import logo from "../../assets/Images/logo.svg";
+import logo from "../../assets/Images/logo.png";
 
 const Header = () => {
   return (

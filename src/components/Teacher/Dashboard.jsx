@@ -5,8 +5,10 @@ import ProfilePictureAvatar from "../../assets/Images/profile-picture-avatar.svg
 import React from "react";
 import Upload from "../../assets/icons/tabler-icon-upload.svg";
 import calendar from "../../assets/icons/calendar.svg";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate=useNavigate();
   return (
     <>
       <Header />
@@ -229,7 +231,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </section>
-              <div className="saveprofile-btn">
+              <div onClick={()=> navigate("/teacher/subjects")} className="saveprofile-btn">
                 <Button text="Save Profile" additionalClass="button-primary" />
               </div>
             </div>

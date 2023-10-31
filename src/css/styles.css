@@ -194,6 +194,9 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
+.subject-list li:hover{
+  background-color:#dbf0fa ;
+}
 .video-container .subject-list li{
  background-color:#222222;
   color: #ffffff;
