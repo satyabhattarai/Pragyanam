@@ -1,5 +1,6 @@
 import Atom from "../../assets/icons/atom 1.svg";
 import Group from "../../assets/icons/Group.svg";
+import Header from "../Header/Header";
 import Pi from "../../assets/icons/number-pi 1.svg";
 import React from "react";
 import Sidebar from "../Sidebar";
@@ -11,6 +12,7 @@ const English = () => {
  const navigate= useNavigate();
   return (
     <div>
+      <Header />
       <div className="subject-container">
       <Sidebar/>
         <div className="subject-subcontainer">

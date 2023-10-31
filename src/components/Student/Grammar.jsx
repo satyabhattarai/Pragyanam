@@ -1,3 +1,4 @@
+import Header from "../Header/Header";
 import React from "react";
 import Sidebar from "../Sidebar";
 import dashboard from "../../assets/icons/tabler-icon-layout-dashboard.svg";
@@ -7,8 +8,10 @@ import subjecticon from "../../assets/icons/tabler-icon-notes.svg";
 import { useNavigate } from "react-router-dom";
 const Grammar = () => {
   const navigate = useNavigate();
-  return (
+  return (<>
+  <Header/>
     <div className="subject-container">
+
       <Sidebar />
       <div className="subject-subcontainer">
         <div className="subject-toplabel">
@@ -33,7 +36,7 @@ const Grammar = () => {
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
               <p onClick={() => navigate("/modal")}>Modal 1</p>
-              <p onClick={() => navigate("/questions")} className="text-muted">
+              <p onClick={() => navigate("/teacher/questions")} className="text-muted">
                 100 Questions
               </p>
             </li>
@@ -95,6 +98,7 @@ const Grammar = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
