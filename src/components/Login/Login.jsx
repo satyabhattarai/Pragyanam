@@ -7,8 +7,10 @@ import React from "react";
 import ellipse from "../../assets/Images/Ellipse 3.png";
 import girl from "../../assets/Images/Ellipse 1.png";
 import logo from "../../assets/Images/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate=useNavigate();
   return (
     <div className="login-container">
       <div className="image-container">
@@ -54,7 +56,7 @@ const Login = () => {
           </a>
         </div>
 
-          <button className="login-button button button-primary">Sign In</button>
+          <button onClick={()=> navigate("/register-choice")} className="login-button button button-primary">Sign In</button>
 
         <div className="text-center">
           <span>Don't have an account? <a className="bold" href="#">Register Now</a></span>

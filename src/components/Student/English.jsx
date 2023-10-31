@@ -2,38 +2,17 @@ import Atom from "../../assets/icons/atom 1.svg";
 import Group from "../../assets/icons/Group.svg";
 import Pi from "../../assets/icons/number-pi 1.svg";
 import React from "react";
+import Sidebar from "../Sidebar";
 import dashboard from "../../assets/icons/tabler-icon-layout-dashboard.svg";
 import reporticon from "../../assets/icons/tabler-icon-chart-pie.svg";
 import subjecticon from "../../assets/icons/tabler-icon-notes.svg";
-
+import { useNavigate } from "react-router-dom";
 const English = () => {
+ const navigate= useNavigate();
   return (
     <div>
       <div className="subject-container">
-        <div className="sidebar">
-          <div className="subject-nav-form">
-            <ul className="subject-nav-list">
-              <li>
-                <a href="/">
-                  <img src={dashboard} alt="" />
-                  <h6 className="bold">Dashboard</h6>
-                </a>
-              </li>
-              <li className="active-subject">
-                <a href="/">
-                  <img src={subjecticon} alt="Notes Img" />
-                  <h6 className="bold">Subjects</h6>
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <img src={reporticon} alt="" />
-                  <h6 className="bold">Result</h6>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <Sidebar/>
         <div className="subject-subcontainer">
           <div className="subject-toplabel">
             <label>Subjects</label>
@@ -48,10 +27,10 @@ const English = () => {
               every one of us should have knowledge and learning when it comes
               in studying the English subject.
             </p>
-            </div>
+          </div>
           <div className="subject-code">
             <ul className="subject-list">
-              <li>
+              <li onClick={() => navigate("/grammar")}>
                 <img src={Group} alt="English Img" />
                 <h5>Grammar</h5>
               </li>

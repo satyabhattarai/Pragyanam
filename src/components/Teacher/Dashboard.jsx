@@ -23,7 +23,7 @@ const Dashboard = () => {
           <h4 className="bold dashboard-heading">Complete Your Profile</h4>
           <div className="dashboard-form">
             <div className="dashboard-form-nav">
-              <ul class="dashboard-nav-list">
+              <ul className="dashboard-nav-list">
                 <li className="active-link">
                   <a href="#profile-picture">Profile Picture</a>
                 </li>
@@ -59,7 +59,7 @@ const Dashboard = () => {
 
               <section className="input-section" id="personal-info">
                 <h4 className="bold">Personal Info</h4>
-                <div class="personal-info-form">
+                <div className="personal-info-form">
                   <div className="input-container">
                     <label className="bold text-muted">First Name</label>
                     <div className="input-group">
@@ -82,7 +82,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-                <div class="personal-info-form">
+                <div className="personal-info-form">
                   <div className="input-container">
                     <label className="bold text-muted">Email</label>
                     <div className="input-group">
@@ -114,7 +114,7 @@ const Dashboard = () => {
                       type="text"
                       placeholder="1992-12-22"
                     />
-                    <span class="icon-suffix">
+                    <span className="icon-suffix">
                       <img src={calendar} alt="calendar icon" />
                     </span>
                   </div>
@@ -179,23 +179,23 @@ const Dashboard = () => {
                         <path
                           d="M7.49996 18.5468C6.25223 18.5468 5.05561 18.0727 4.17334 17.2288C3.29107 16.3849 2.79541 15.2403 2.79541 14.0468C2.79541 12.8534 3.29107 11.7088 4.17334 10.8648C5.05561 10.0209 6.25223 9.54683 7.49996 9.54683C7.79464 8.234 8.65672 7.08031 9.89654 6.33954C10.5104 5.97275 11.1986 5.71837 11.9217 5.59094C12.6449 5.4635 13.3888 5.4655 14.1111 5.59683C14.8333 5.72815 15.5198 5.98622 16.1312 6.35631C16.7427 6.72639 17.2672 7.20125 17.6747 7.75375C18.0823 8.30626 18.3649 8.92561 18.5065 9.57642C18.6481 10.2272 18.6459 10.8968 18.5 11.5468H19.5C20.4282 11.5468 21.3185 11.9156 21.9748 12.572C22.6312 13.2283 23 14.1186 23 15.0468C23 15.9751 22.6312 16.8653 21.9748 17.5217C21.3185 18.1781 20.4282 18.5468 19.5 18.5468H18.5"
                           stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M9.5 15.5469L12.5 12.5469L15.5 15.5469"
                           stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M12.5 12.5469V21.5469"
                           stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                       <span>Browse File</span>
@@ -230,10 +230,7 @@ const Dashboard = () => {
                 </div>
               </section>
               <div className="saveprofile-btn">
-                <Button
-                  text="Save Profile"
-                  additionalClass="button-primary"
-                />
+                <Button text="Save Profile" additionalClass="button-primary" />
               </div>
             </div>
           </div>
