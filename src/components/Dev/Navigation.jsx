@@ -22,6 +22,9 @@ const Navigation = () => {
         <li>
           <Link to="/teacher/dashboard">Teacher Dashboard</Link>
         </li>
+        <li>
+          <Link to="/student/subjects">Student Dashboard</Link>
+        </li>
       </ul>
     </div>
   );

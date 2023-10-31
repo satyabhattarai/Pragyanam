@@ -1,35 +1,15 @@
 import React from "react";
+import Sidebar from "../Sidebar";
 import dashboard from "../../assets/icons/tabler-icon-layout-dashboard.svg";
 import listicon from "../../assets/icons/list.svg";
 import reporticon from "../../assets/icons/tabler-icon-chart-pie.svg";
 import subjecticon from "../../assets/icons/tabler-icon-notes.svg";
+import { useNavigate } from "react-router-dom";
 const Grammar = () => {
+  const navigate = useNavigate();
   return (
     <div className="subject-container">
-      <div className="sidebar">
-        <div className="subject-nav-form">
-          <ul className="subject-nav-list">
-            <li>
-              <a href="/">
-                <img src={dashboard} alt="" />
-                <h6 className="bold">Dashboard</h6>
-              </a>
-            </li>
-            <li className="active-subject">
-              <a href="/">
-                <img src={subjecticon} alt="Notes Img" />
-                <h6 className="bold">Subjects</h6>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <img src={reporticon} alt="" />
-                <h6 className="bold">Result</h6>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Sidebar />
       <div className="subject-subcontainer">
         <div className="subject-toplabel">
           <label>Subjects</label>
@@ -52,61 +32,63 @@ const Grammar = () => {
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p>Modal 1</p>
+              <p onClick={() => navigate("/modal")}>Modal 1</p>
+              <p onClick={() => navigate("/questions")} className="text-muted">
+                100 Questions
+              </p>
+            </li>
+            <li>
+              <img src={listicon} alt="Grammar Img" />
+              <h5>Grammar</h5>
+              <p>Modal 2</p>
               <p className="text-muted">100 Questions</p>
             </li>
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p>Modal 1</p>
+              <p>Modal 3</p>
               <p className="text-muted">100 Questions</p>
             </li>
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p>Modal 1</p>
-              <p className="text-muted">100 Questions</p>
-            </li>{" "}
-            <li>
-              <img src={listicon} alt="Grammar Img" />
-              <h5>Grammar</h5>
-              <p>Modal 1</p>
+              <p>Modal 4</p>
               <p className="text-muted">100 Questions</p>
             </li>
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p>Modal 1</p>
+              <p>Modal 5</p>
               <p className="text-muted">100 Questions</p>
             </li>
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p>Modal 1</p>
+              <p className="text-muted">Modal 6</p>
               <p className="text-muted">100 Questions</p>
             </li>
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p className="text-muted">Modal 1</p>
+              <p className="text-muted">Modal 7</p>
               <p className="text-muted">100 Questions</p>
             </li>
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p className="text-muted">Modal 1</p>
+              <p className="text-muted">Modal 8</p>
               <p className="text-muted">100 Questions</p>
             </li>
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p className="text-muted">Modal 1</p>
+              <p className="text-muted">Modal 9</p>
               <p className="text-muted">100 Questions</p>
             </li>
             <li>
               <img src={listicon} alt="Grammar Img" />
               <h5>Grammar</h5>
-              <p className="text-muted">Modal 1</p>
+              <p>Modal 10</p>
               <p className="text-muted">100 Questions</p>
             </li>
           </ul>

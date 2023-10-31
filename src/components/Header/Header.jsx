@@ -22,7 +22,7 @@ const Header = () => {
             type="text"
             placeholder="Search"
           />
-          <div class="icon-suffix">
+          <div className="icon-suffix">
           <img src={Search} alt="Seacrh Icon"/>
            </div>
         </div>
